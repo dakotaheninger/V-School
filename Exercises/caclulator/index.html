@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 top">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-6">
+                            Enter Two Numbers Here
+                        </div>
+                    </div>
+
+                    <input id="num1" class="add-one" type="number">
+                    <input id="num2" class="add-two" type="number">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="add" class="btn btn-lg btn-info">ADD</button>
+                    <div id="resultadd" class="result"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="subtract" class="btn btn-lg btn-info">SUBTRACT</button>
+                    <div id="resultsub" class="result"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="multiply" class="btn btn-lg btn-info">MULTIPLY</button>
+                    <div id="resultmult" class="result"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="division" class="btn btn-lg btn-info">Division</button>
+                    <div id="resultdiv" class="result"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="modulus" class="btn btn-lg btn-info">REMAINDER</button>
+                    <div id="resultmod" class="result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

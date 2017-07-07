@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+#pokemon-name {
+    height: 3vmax;
+    width: 20vmax;
+    font-size: 2vmax;
+}
+#search {
+    height: 3vmax;
+    width: 10vmax;
+    font-size: 2vmax;
+}
+.pokemon-box{
+    padding-top: 15vh;
+    margin-top: 30vh;
+    display: inline-block;
+    border-radius: 50px;
+    background-size: contain;
+}
+.pokemon {
+    font-size: 6vh;
+    color: black;
+    background-color: rgba(255,255,255,0.6);
+    margin: 0;
+    
+}

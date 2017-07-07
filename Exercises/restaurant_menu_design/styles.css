@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(255,255,0,0.7);
+    font-family: 'Amatic SC', cursive;
+}
+#container-change {
+    background-color: rgba(0,0,0,0.7);
+    width: 70%;
+    margin: auto;
+}
+h3 {
+    font-size: 100px;
+}
+.even{
+    color: yellow;
+    font-size: 50px;
+    text-align: right;
+    margin-right: 35%;
+}
+.odd {
+    color: white;
+    font-size: 50px;
+    margin-left: 35%;
+}

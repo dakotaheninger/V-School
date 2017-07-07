@@ -1,0 +1,54 @@
+{
+    "breakfast": [
+        {
+            "name": "colossus",
+            "meat": true,
+            "ing": ["cheese", "egg", "bacon", "sriracha"]
+        },
+        {
+            "name": "pancakes",
+            "meat": false,
+            "ing": ["flour", "sugar", "milk", "eggs"]
+
+        },
+        {
+            "name": "omelette",
+            "meat": true,
+            "ing": ["eggs", "bacon", "ham", "cheese"]
+        }
+    ],
+    "lunch": [
+        {
+            "name": "ham sandwich",
+            "meat": true,
+            "ing": ["bread", "ham", "cheese", "lettuce"]
+        },
+        {
+            "name": "mac and cheese",
+            "meat": false,
+            "ing": ["noodles", "cheese", "milk", "butter"]
+        },
+        {
+            "name": "pizza",
+            "meat": true,
+            "ing": ["bread", "cheese", "pepperoni", "sausage"]
+        }
+    ],
+    "supper": [
+        {
+            "name": "lasagna",
+            "meat": true,
+            "ing": ["noodles", "sauce", "beef", "cheese"]
+        },
+        {
+            "name": "steak",
+            "meat": true,
+            "ing": ["beef", "seasoning"]
+        },
+        {
+            "name": "fried chicken",
+            "meat": true,
+            "ing": ["chicken", "breading", "seasoning"]
+        }
+    ]
+}

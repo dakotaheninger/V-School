@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    margin: 200px 20%;
+}
+
+h1, p {
+    background-color: burlywood;
+    padding: 75px;
+    margin: 0;
+}
+
+h1 {
+    color: cadetblue;
+    padding-top: 100px;
+    border-top-right-radius: 30pc;
+    border-top-left-radius: 30pc;
+}
+p {
+    border-bottom-right-radius: 30pc;
+    border-bottom-left-radius: 30pc;
+}
+
+a {
+    font-size: 30px;
+    color: burlywood;
+    background-color: cadetblue;
+    padding: 50px;
+    text-decoration: none;
+    border-radius: 25;
+    border-radius: 50px;
+}
+a:hover {
+    text-decoration: underline;
+    border-top: 10px solid burlywood;
+    border-bottom: 10px solid cadetblue;
+    background-color: aliceblue;
+    border-left: 10px solid cadetblue;
+    border-right: 10px solid burlywood;
+    color: cadetblue;
+}

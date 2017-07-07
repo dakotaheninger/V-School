@@ -1,0 +1,159 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    background-image: url(Pictures/new%20york.jpg);
+    background-attachment: fixed;
+}
+
+body {
+    background-color: #1D1E2C;
+    margin: 100px 20%;
+    border-bottom-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+}
+
+.header {
+    font-size: 100px;
+    text-align: center;
+    color: #D7CDCC;
+    background-color: #59656F;
+    display: inline-block;
+    padding: 40px;
+    border-radius: 50px;
+    font-family: 'Barrio', cursive;
+}
+
+nav {
+    background-color: #D7CDCC;
+    text-align: center;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.links {
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 0;
+}
+
+.links li {
+    list-style: none;
+    display: inline-block;
+    text-align-last: center;
+    padding: 10px 85px;
+}
+
+.links a {
+    color: #1D1E2C;
+    font-size: 49px;
+    border: 10px solid #1D1E2C;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: fantasy;
+    margin-bottom: 0;
+    background-color: #FFFFFF;
+}
+
+.links a:hover {
+    color: #FFFFFF;
+    border: 10px solid #FFFFFF;
+    background-color: #1D1E2C;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 0;
+    background-color: #D7CDCC;
+}
+
+.content {
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    display: inline-block;
+    width: 300px;
+    margin: 0 30px;
+    vertical-align: top;
+    line-height: 25px;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #D7CDCC;
+}
+
+.one {
+    margin-bottom: 0;
+    background-color: #1D1E2C;
+    padding-bottom: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.two {
+    margin-bottom: 0;
+    padding-bottom: 275px;
+    background-color: #1D1E2C;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.three {
+    margin-bottom: 0;
+    background-color: #1D1E2C;
+    padding-bottom: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.four {
+    background-color: #1D1E2C;
+    padding-bottom: 201px
+}
+
+.five {
+    background-color: #1D1E2C;
+    padding-bottom: 51px
+}
+
+.six {
+    margin: 0;
+    padding: 238px 0;
+    background-color: #1D1E2C;
+    margin: 0 30px;
+}
+
+.image {
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+}
+
+.bottom {
+    text-align: center;
+}
+
+.bottom li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 80px;
+    color: aliceblue;
+    background-color: #1D1E2C;
+    border-radius: 25px;
+    border: 5px solid #FFFFFF;
+}
+.bottom li:hover {
+    background-color: #FFFFFF;
+    text-decoration: underline;
+    color: #1D1E2C;
+    font-weight: 700;
+}

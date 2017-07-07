@@ -1,0 +1,121 @@
+.row {
+    margin-top: 10vh;
+}
+
+#skinny {
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+#bugs {
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+#rebecca {
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+#six {
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+#ewok {
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+#jabba {
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+#vegetables {
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+.bad-text {
+    background-color: white;
+    height: 5vh;
+    font-size: 3vh;
+    position: absolute;
+    padding: 5px;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+#hit-box {
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+.bad:hover {
+    cursor: auto;
+    cursor: url(images/crosshair.png) 4 12, auto;
+}

@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+.box {
+    height: 50px;
+    width: 25%;
+    background-color: darkcyan;
+    margin-top: 10px;
+    display: inline-block;
+    float: left;
+    border: 2px solid white;
+}
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+}

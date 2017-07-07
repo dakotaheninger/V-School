@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.travel {
+    font-size: 100px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: cadetblue;
+    color: dimgray;
+}
+
+.travel:hover {
+     background-color: white;
+    color: black;
+    border-bottom: 10px solid cadetblue;
+    border-right: 10px solid cadetblue;
+    border-top: 10px solid dimgray;
+    border-left: 10px solid dimgray;
+}
+
+.who {
+    width: 500px;
+    margin: 20px auto;
+    font-size: 30px;
+}
+
+.number {
+    font-size: 100px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: dimgray;
+    color: cadetblue;
+}
+
+.number:hover {
+    background-color: white;
+    color: black;
+    border-bottom: 10px solid dimgray;
+    border-right: 10px solid dimgray;
+    border-top: 10px solid cadetblue;
+    border-left: 10px solid cadetblue;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.which {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}

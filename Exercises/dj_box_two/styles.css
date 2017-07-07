@@ -1,0 +1,20 @@
+.row {
+    width: 100%;
+    text-align: center;
+}
+.skinny {
+    display: inline-block;
+    height: 90vh;
+    width: 40%;
+    margin: 50px auto;
+    background-color: gray;
+    transition: all .1s ease-in-out;
+}
+
+
+.one-transition {
+    width: 100%;
+    background-color: yellow;
+}
+
+

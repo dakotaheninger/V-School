@@ -1,0 +1,146 @@
+body{
+    background-color: purple;
+}
+article {
+    display: inline-block;
+}
+.section-one div {
+    padding: 30px;
+    margin: 30px;
+}
+.right {
+    position: fixed;
+    top 0;
+    right: 0;
+}
+.section-two div{
+    padding: 30px;
+    margin: 30px;
+    
+}
+
+.one {
+    width: 500px;
+    height: 500px;
+    background-color: #170F11;
+    border: 10px solid purple;
+    position:
+}
+.two {
+    width: 450px;
+    height: 450px;
+    background-color: purple;
+    border: 10px solid #170F11;
+}
+.three {
+    width: 400px;
+    height: 400px;
+    background-color: #170F11;
+    border: 10px solid purple;
+}
+.four {
+    width: 350px;
+    height: 350px;
+    background-color: purple;
+    border: 10px solid #170F11;
+}
+.five {
+    width: 300px;
+    height: 300px;
+    background-color: #170F11;
+    border: 10px solid purple;
+}
+.six{
+    width: 250px;
+    height: 250px;
+    background-color: purple;
+    border: 10px solid #170F11;
+}
+.seven {
+    width: 200px;
+    height: 200px;
+    background-color: #170F11;
+    border: 10px solid purple;
+}
+.eight {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    border: 10px solid #170F11;
+}
+.nine {
+    width: 100px;
+    height: 100px;
+    background-color: #170F11;
+    border: 10px solid purple;
+}
+.ten {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    border: 10px solid #170F11;
+}
+.a {
+    width: 500px;
+    height: 500px;
+    background-color: #170F11;
+    border: 10px solid purple;
+}
+.b {
+    width: 450px;
+    height: 450px;
+    background-color: purple;
+    border: 10px solid #170F11;
+    position: fixed;
+    
+}
+.c {
+    width: 400px;
+    height: 400px;
+    background-color: #170F11;
+    border: 10px solid purple;
+}
+.d {
+    width: 350px;
+    height: 350px;
+    background-color: purple;
+    border: 10px solid #170F11;
+}
+.e {
+    width: 300px;
+    height: 300px;
+    background-color: #170F11;
+    border: 10px solid purple;
+}
+.f {
+    width: 250px;
+    height: 250px;
+    background-color: purple;
+    border: 10px solid #170F11;
+}
+.g {
+    width: 200px;
+    height: 200px;
+    background-color: #170F11;
+    border: 10px solid purple;
+}
+.h {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    border: 10px solid #170F11;
+}
+.i {
+    width: 100px;
+    height: 100px;
+    background-color: #170F11;
+    border: 10px solid purple;
+}
+.j {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    border: 10px solid #170F11;
+}
+
+

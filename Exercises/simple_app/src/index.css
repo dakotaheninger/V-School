@@ -1,0 +1,150 @@
+.skinny {
+    padding-top: 3vh;
+
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 15px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+.links a:hover {
+    color: #eee;
+}
+.top-link {
+    flex-grow: 1;
+
+}
+.web-name {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+}
+.web-name a {
+
+    text-decoration: none;
+    color: white;
+}
+.web-name a:hover {
+    color: #eee;
+    cursor: pointer;
+}
+.head {
+    text-align: center;
+    padding-top: 10vh;
+}
+.main-head {
+    font-size: 75px;
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+}
+.background {
+    background-image: url("images/home-bg.jpg");
+    background-size: 100%;
+    background-position: center;
+}
+.underline {
+    width: 5vw;
+    border: 2px solid white;
+    margin: 0 auto;
+}
+.sentance {
+    padding-top:2vh;
+    padding-bottom:13vh;
+    color: white;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+
+}
+.content {
+    text-align: left;
+    padding-left: 5vw;
+    margin-top: 4vh;
+
+}
+.content:hover {
+    color: cornflowerblue;
+    cursor: pointer;
+}
+.content a h1:hover {
+    color: #0085A1;
+    text-decoration: none;
+    cursor: pointer;
+}
+.content a h2:hover {
+    color: #0085A1;
+    text-decoration: none;
+    cursor: pointer;
+}
+.title {
+    font-family: 'Archivo Black', sans-serif;
+    color: black;
+    font-size: 32px;
+}
+.hover:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.description {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+.post {
+    font-family: 'Dancing Script', cursive;
+    color: gray;
+    font-size: 20px;
+}
+.company-link {
+    color: black;
+}
+
+.content-underline {
+    width: 100%;
+    border: 1px solid whitesmoke;
+    margin: 0 auto;
+}
+.older {
+    margin-top: 2vh;
+    text-align: center;
+    float: right;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    width: 10vw;
+    border: 1px solid lightgrey;
+    font-size: 15px;
+    color: black;
+    margin-bottom: 2vh;
+}
+.older-link a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: cornflowerblue;
+}
+.full-underline {
+    width:100%;
+    border: 1px solid whitesmoke;
+    margin: 0 auto;
+}
+.social {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+}
+.social-tag {
+    flex-grow: 1;
+    font-size: 30px;
+    color: #333;
+}
+.copyright {
+    text-align: center;
+    margin-bottom: 5vh;
+    color: gray;
+}

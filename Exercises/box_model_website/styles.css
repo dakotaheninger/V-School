@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 200px
+}
+
+.one {
+    display: inline-block;
+    background-color: #F5C6D6;
+    width: 100%;
+    height: 150px;
+    border: 20px solid white;
+}
+
+.small {
+    text-align: center;
+}
+
+.small div {
+    display: inline-block;
+    background-color: #EE2E84;
+    height: 150px;
+    width: 25%;
+    border: 20px solid white;
+}
+
+.two {
+    text-align: center;
+}
+
+.two div {
+    display: inline-block;
+    background-color: #85CFD8;
+    height: 150px;
+    width: 50%;
+    border: 20px solid white;
+}
+
+.last div {
+    display: inline-block;
+}
+
+.big {
+    height: 150px;
+    width: 70%;
+    background-color: #8DC63F;
+    border: 20px solid white;
+}
+
+.little {
+    height: 150px;
+    width: 30%;
+    background-color: #E76E34;
+    border: 20px solid white;
+}
+@media (max-width: 1024px) {
+    body {
+        padding: 0px;
+    }
+    .one {
+        margin: 0px;
+        height: 10vh;
+        width: 50%;
+        border: none;
+    }
+    .small .box {
+        margin: 0px;
+        width: 50%;
+        height: 10vh;
+        border: none;
+    }
+    .two .box {
+        margin: 0px;
+        width: 50%;
+        height: 10vh;
+        border: none;
+    }
+    .last .big {
+        margin: 0px;
+        width: 50%;
+        height: 10vh;
+        border: none;
+        
+    }
+    .last .little {
+        margin: 0px;
+        width: 50%;
+        height: 10vh;
+        border: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 0px;
+    }
+    .one {
+        margin: 0px;
+        height: 10vh;
+        width: 100%;
+        border: none;
+    }
+    .small .box {
+        margin: 0px;
+        width: 100%;
+        height: 10vh;
+        border: none;
+    }
+    .two .box {
+        margin: 0px;
+        width: 100%;
+        height: 10vh;
+        border: none;
+    }
+    .last .big {
+        margin: 0px;
+        width: 100%;
+        height: 10vh;
+        border: none;
+        
+    }
+    .last .little {
+        margin: 0px;
+        width: 100%;
+        height: 10vh;
+        border: none;
+    }
+    
+}

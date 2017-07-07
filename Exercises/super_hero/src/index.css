@@ -1,0 +1,40 @@
+body {
+    background-color: gray;
+}
+.row {
+    margin-top: 5vh;
+}
+.name {
+    background-color: rgba(255,255,255,0.6);
+}
+.name:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+.thor {
+    padding-bottom: 5vh;
+    text-align: center;
+    padding-top:  40vh;
+    background-image: url(images/thor.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hulk {
+    padding-bottom: 5vh;
+    text-align: center;
+    padding-top:  40vh;
+    background-image: url(images/hulk.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.flexbox {
+    padding-bottom: 5vh;
+    text-align: center;
+    padding-top:  40vh;
+    background-image: url(images/flexbox.jpg);
+    background-position: center;
+    background-size: cover;
+}

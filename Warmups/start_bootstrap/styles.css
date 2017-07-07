@@ -1,0 +1,76 @@
+.container {
+    width: 100%
+}
+.header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+.start-bootstrap {
+    font-size: 20px;
+}
+.start-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+.body-boot {
+    text-align: center;
+    padding-top: 5%;
+    background-color: #18bc9c;
+}
+.bob {
+    display: inline-block;
+}
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    margin: 0;
+}
+.boot-words {
+    background-color: #18bc9c;
+    padding-top: 20px;
+}
+.line-left {
+    width: 100px;
+    border: 2px solid white;
+    display: inline-block;
+    margin-right: 3px;
+}
+.line-right {
+    width: 100px;
+    border: 2px solid white;
+    display: inline-block;
+    margin-left: 3px;
+}
+.star {
+    color: white;
+    text-align: center;
+    background-color: #18bc9c;
+    padding-top: 20px
+}
+.description {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #18bc9c
+}
+@media (max-width:768px) {
+    .start-bootstrap {
+        float:left;
+    }
+}
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+    .description {
+        font-size: 15px;
+    }
+}

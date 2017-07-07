@@ -1,0 +1,39 @@
+.main {
+    text-align: center;
+    background-color: cadetblue;
+}
+
+.title {
+    color: yellow;
+    font-size: 40px;
+}
+
+.instruction {
+    color: white;
+    font-size: 20px;
+}
+
+.input {
+    padding: 1vmin;
+    margin: 1vmin;
+}
+
+.add {
+    font-size: 30px;
+    color: yellow;
+    padding: 1vmin;
+    border: 3px solid white;
+}
+
+.add:hover {
+    text-decoration: none;
+    color: cadetblue;
+    background-color: white;
+    cursor: pointer;
+}
+
+.ind-items {
+    list-style: none;
+    background-color: white;
+    padding:;
+}
