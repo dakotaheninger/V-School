@@ -36,6 +36,11 @@ class TodoContainer extends React.Component {
             })
         }
     }
+    keyPress(event) {
+        if(event.key == "Enter"){
+            this.click();
+        }
+    }
 
     remove(index) {
         let oldItem = [...this.state.list];
@@ -60,7 +65,7 @@ class TodoContainer extends React.Component {
     render() {
         return (
             <div>
-                <input className="input" value={this.state.listItems} onChange={this.input}/>
+                <input onKeyPress={this.keyPress} className="input" value={this.state.listItems} onChange={this.input}/>
                 <a className="add" onClick={() => {
                     this.click();
                 }}>Click to Add Item
