@@ -1,11 +1,11 @@
 /**
- * Created by dakotaheninger on 7/6/17.
+ * Created by dakotaheninger on 7/7/17.
  */
 import React from "react";
-import List from "../components/list.js";
-import autoBind from "react-autobind";
+import TodoList from "../component/todo-list.js";
+import autoBind from "react-autobind"
 
-class ListContainer extends React.Component {
+class TodoContainer extends React.Component {
     constructor() {
         super();
         autoBind(this);
@@ -45,7 +45,8 @@ class ListContainer extends React.Component {
             list: oldItem
         })
     }
-    edit(index){
+
+    edit(index) {
         let newEdit = prompt("Please edit the chore!");
         let oldValue = [...this.state.list];
         oldValue.splice(index, 1, newEdit);
@@ -58,14 +59,19 @@ class ListContainer extends React.Component {
 
     render() {
         return (
-            <List title="Welcome to the To-Do List!"
-                  instruction="Type in the chore that needs doing and click the Add button to add it to the list!"
-                  delete="Click the X to remove an item!" edit="Click the Edit button to edit an item!" handleRemove={this.remove}
-                  value={this.state.listItems} handleClick={this.click} handleInput={this.input}
-                  list={this.state.list} handleEdit={this.edit}/>
+            <div>
+                <input className="input" value={this.state.listItems} onChange={this.input}/>
+                <a className="add" onClick={() => {
+                    this.click();
+                }}>Click to Add Item
+                </a>
+                <TodoList handleRemove={this.remove} list={this.state.list}
+                          handleEdit={this.edit}/>
+            </div>
         )
     }
+
 }
 
 
-export default ListContainer;
+export default TodoContainer;
