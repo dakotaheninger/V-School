@@ -12,6 +12,7 @@ class Header extends React.Component {
                 <p className="instruction">{this.props.instruction}</p>
                 <p className="instruction">{this.props.delete}</p>
                 <p className="instruction">{this.props.edit}</p>
+                <p className="instruction">{this.props.cancelEdit}</p>
             </div>
         )
     }

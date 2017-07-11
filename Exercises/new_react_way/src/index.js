@@ -13,7 +13,7 @@ class App extends React.Component {
             <div className="col-md-offset-3 col-md-6 main">
                 <Header title="Welcome to the To-Do List!"
                         instruction="Type in the chore that needs doing and click the Add button or press enter to add it to the list!"
-                        delete="Click the X to remove an item!" edit="Click the Edit button to edit an item!"/>
+                        delete="Click the X to remove an item!" edit="Click the Edit button to edit an item!" cancelEdit="If you want to cancel and Edit, click the X to cancel!"/>
                 <TodoContainer/>
             </div>
         )

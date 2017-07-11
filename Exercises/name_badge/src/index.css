@@ -1,0 +1,31 @@
+.main-input {
+    border: 3px solid black;
+    padding: 5vmin;
+    margin-top: 10vh;
+    border-radius: 50px;
+}
+.input {
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+    border: 2px solid black;
+}
+.about {
+    padding-bottom: 10vmin;
+    border: 2px solid black;
+}
+.head {
+    text-align: center;
+}
+.sub-but {
+    text-align: center;
+    margin-top: 5vmin;
+    border: 3px solid black;
+    font-size: 20px;
+}
+.sub-but a {
+    color: black;
+}
+.sub-but a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}

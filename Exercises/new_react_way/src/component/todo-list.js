@@ -7,17 +7,21 @@ import TodoItem from "./todo-item.js";
 
 
 class TodoList extends React.Component {
-    genTodoItems (){
-         return this.props.list.map((item, index) => {
-            return (<TodoItem key={item + index} handleRemove={this.props.handleRemove} handleEdit={this.props.handleEdit} item={item}
-                              index={index}/>);
+    genTodoItems() {
+        return this.props.list.map((item, index) => {
+            return (
+                <TodoItem key={item + index} inputOpen={this.props.inputOpen} handleCancel={this.props.handleCancel} placeholder={this.props.placeholder} handleRemove={this.props.handleRemove}
+                          handleNewInput={this.props.handleNewInput} handleEditInput={this.props.handleEditInput}
+                          handleEditItem={this.props.handleEditItem} value={this.props.value}
+                          item={item} index={index}/>);
         });
     }
+
     render() {
         return (
-                <ul className="col-md-12">
-                    {this.genTodoItems()}
-                </ul>
+            <ul className="col-md-12">
+                {this.genTodoItems()}
+            </ul>
         )
     }
 }

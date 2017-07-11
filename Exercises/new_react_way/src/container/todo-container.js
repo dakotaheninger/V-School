@@ -11,7 +11,9 @@ class TodoContainer extends React.Component {
         autoBind(this);
         this.state = {
             list: [],
-            listItems: ""
+            listEdit: "",
+            listItems: "",
+            inputOpen: false
         }
     }
 
@@ -19,6 +21,14 @@ class TodoContainer extends React.Component {
         this.setState({
             ...this.state,
             listItems: event.target.value
+        })
+    }
+
+    editInput(event) {
+        this.setState({
+            ...this.state,
+            listEdit: event.target.value
+
         })
     }
 
@@ -36,8 +46,9 @@ class TodoContainer extends React.Component {
             })
         }
     }
+
     keyPress(event) {
-        if(event.key == "Enter"){
+        if (event.key == "Enter") {
             this.click();
         }
     }
@@ -51,16 +62,47 @@ class TodoContainer extends React.Component {
         })
     }
 
-    edit(index) {
-        let newEdit = prompt("Please edit the chore!");
-        let oldValue = [...this.state.list];
-        oldValue.splice(index, 1, newEdit);
+
+    newInput(index) {
+        if (this.state.inputOpen == true) {
+            alert(`Please Finish Editing This Item First`);
+        } else {
+            document.querySelector(`.item${index}`).style.display = "none";
+            document.querySelector(`.edit${index}`).style.display = "inline";
+            this.setState({
+                ...this.state,
+                inputOpen: true
+            })
+        }
+    }
+    cancel(index){
+        document.querySelector(`.item${index}`).style.display = "inline";
+        document.querySelector(`.edit${index}`).style.display = "none";
         this.setState({
             ...this.state,
-            list: oldValue
+            inputOpen: false
         })
-
     }
+
+    editItem(index) {
+        if (this.state.listEdit.match(/[a-z]/i)) {
+            let editState = [...this.state.list];
+            editState.splice(index, 1, this.state.listEdit);
+            this.setState({
+                ...this.state,
+                list: editState,
+                listEdit: "",
+                inputOpen: false
+
+            })
+        } else {
+            this.setState({
+                ...this.state,
+                listEdit: ""
+            })
+        }
+    }
+
 
     render() {
         return (
@@ -70,8 +112,9 @@ class TodoContainer extends React.Component {
                     this.click();
                 }}>Click to Add Item
                 </a>
-                <TodoList handleRemove={this.remove} list={this.state.list}
-                          handleEdit={this.edit}/>
+                <TodoList handleCancel={this.cancel} inputOpen={this.state.inputOpen} placeholder={this.state.list} handleEditInput={this.editInput} handleEditItem={this.editItem}
+                          value={this.state.listEdit} handleRemove={this.remove} list={this.state.list}
+                          handleNewInput={this.newInput}/>
             </div>
         )
     }

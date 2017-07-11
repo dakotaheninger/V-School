@@ -1,0 +1,39 @@
+.main{
+    margin-top: 10vh;
+}
+.main h1, h2 {
+    margin: 0;
+    margin-bottom: 1vmin;
+}
+
+.button {
+    padding: 1vmin;
+}
+.score{
+    margin: 1vmin;
+}
+.blue-score{
+    color: blue;
+    border: 2px solid blue;
+    background-color: white;
+}
+.red-score{
+    color: red;
+    border: 2px solid red;
+    background-color: white;
+}
+.blue-score:hover {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.red-score:hover {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.line {
+    text-align: center;
+}

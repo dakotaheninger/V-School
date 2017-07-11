@@ -1,3 +1,9 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body {
     background-image: url("./images/nike1.jpg");
     background-position: center;
@@ -71,4 +77,15 @@ body {
 
 .remove {
     float: right;
+}
+.edit-item {
+    margin: 1vmin;
+    border: 3px solid white;
+    padding: 1vmin;
+}
+.edit-item:hover{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
 }
