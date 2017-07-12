@@ -3,6 +3,7 @@
  */
 import React from "react";
 import NameBadgeList from "../components/name-badge-list.js";
+import Form from "../components/input-form.js"
 import autoBind from "react-autobind";
 
 class NameBadgeContainer extends React.Component {
@@ -17,9 +18,9 @@ class NameBadgeContainer extends React.Component {
                 phone: "",
                 lastName: "",
                 birthPlace: "",
-                favoriteFood: "",
-                about: ""
-            }
+                about: "",
+                backgroundColor: ""
+            },
 
 
         }
@@ -41,58 +42,84 @@ class NameBadgeContainer extends React.Component {
     }
 
     click() {
-        this.setState({
-            ...this.state,
-            badges: [...this.state.badges, this.state.currentBadge]
-        })
+        let missingValue = false;
+        let missingKey = "";
+        let smallKey = "";
+        let phoneNumber = true;
+        let isEnough = true;
+        for (let key in this.state.currentBadge) {
+            if (this.state.currentBadge[key].match(/[a-zA-Z0-9]/)) {
+                missingValue = false;
+            } else {
+                missingValue = true;
+                missingKey = key;
+                break;
+            }
+            if (this.state.currentBadge[key].length < 3) {
+                isEnough = false;
+                smallKey = key;
+                break;
+            } else {
+                isEnough = true;
+            }
+        }
+        if (this.state.currentBadge["phone"].match(/[^A-Za-z0-9_]./)) {
+            phoneNumber = false;
+        } else if (this.state.currentBadge["phone"].match(/[a-zA-Z]/i)) {
+            phoneNumber = false;
+        } else {
+            phoneNumber = true;
+        }
+
+        if (missingValue === false && phoneNumber === true && isEnough === true) {
+            let newBadge = {...this.state.currentBadge};
+            for (let key in newBadge) {
+                newBadge[key] = "";
+            }
+            this.setState({
+                ...this.state,
+                badges: [...this.state.badges, this.state.currentBadge],
+                currentBadge: newBadge,
+            });
+        } else if (missingValue === true) {
+            alert(`Please Enter a Valid Input for ${missingKey}`);
+        } else if (phoneNumber === false) {
+            alert(`Please Enter only Numbers in Phone Number`);
+        } else {
+            alert(`Please Enter More Than Two Characters in ${smallKey} `)
+        }
     }
 
+    disappear(index) {
+        document.querySelector(`.badge${index}`).style.display = "none";
+        document.querySelector(`.badgeR${index}`).style.display = "none";
+        document.querySelector(`.about${index}`).style.display = "none";
+        document.querySelector(`.full${index}`).style.display = "inline";
+        document.querySelector(`.compress${index}`).style.display = "none";
+        document.querySelector(`.expand${index}`).style.display = "inherit";
+    };
+
+    reappear(index) {
+        document.querySelector(`.badge${index}`).style.display = "inherit";
+        document.querySelector(`.badgeR${index}`).style.display = "inherit";
+        document.querySelector(`.about${index}`).style.display = "inherit";
+        document.querySelector(`.full${index}`).style.display = "none";
+        document.querySelector(`.compress${index}`).style.display = "inherit";
+        document.querySelector(`.expand${index}`).style.display = "none";
+    }
+
+
     render() {
+
         return (
             <div className="row">
-                <div className="col-md-12 main-input">
-                    <div className="col-md-5 left-side">
-                        <input value={this.getValue("firstName")} onChange={(event) => {
-                            this.handleInput("firstName", event);
-                        }}
-                               className="input col-md-12" placeholder="First Name"/>
-                        <input value={this.getValue("email")} onChange={(event) => {
-                            this.handleInput("email", event);
-                        }}
-                               className="input col-md-12" placeholder="Email"/>
-                        <input value={this.getValue("phone")} onChange={(event) => {
-                            this.handleInput("phone", event);
-                        }}
-                               className="input col-md-12" placeholder="Phone"/>
-                    </div>
-                    <div className="col-md-offset-2 col-md-5">
-                        <input value={this.getValue("lastName")} onChange={(event) => {
-                            this.handleInput("lastName", event);
-                        }} className="input col-md-12" placeholder="Last Name"/>
-                        <input value={this.getValue("birthPlace")} onChange={(event) => {
-                            this.handleInput("birthPlace", event);
-                        }} className="input col-md-12" placeholder="Place of Birth"/>
-                        <input value={this.getValue("favoriteFood")} onChange={(event) => {
-                            this.handleInput("favoriteFood", event);
-                        }}
-                               className="input col-md-12" placeholder="Favorite Food"/>
-                    </div>
-                    <div className=" col-md-12">
-                        <input value={this.getValue("about")} onChange={(event) => {
-                            this.handleInput("about", event);
-                        }}
-                               className="about col-md-12" placeholder="Tell us About Yourself"/>
-                    </div>
-                    <div className="sub-but col-md-offset-3 col-md-6">
-                        <a onClick={() => {
-                            this.click();
-                        }} className="submit">Submit</a>
-                    </div>
-                </div>
-                <NameBadgeList badges={this.state.badges}/>
+                <Form click={this.click} handleInput={this.handleInput} getValue={this.getValue}/>
+                <NameBadgeList handleReappear={this.reappear} handleDisappear={this.disappear}
+                               badges={this.state.badges}/>
             </div>
         )
     }
 }
+
 
 export default NameBadgeContainer;

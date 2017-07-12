@@ -13,6 +13,17 @@
     padding-bottom: 10vmin;
     border: 2px solid black;
 }
+.about-badge {
+    padding-bottom: 10vmin;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: white;
+    font-size: 20px;
+}
+.about-me {
+    padding: 2vmin;
+    display: inherit;
+}
 .head {
     text-align: center;
 }
@@ -29,3 +40,53 @@
     text-decoration: none;
     cursor: pointer;
 }
+.badge-head{
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    color: white;
+    font-size: 30px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.badge-title{
+    margin-left: 2vmin;
+}
+.main-badge {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.badge-left div {
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+    font-size: 18px;
+}
+.badge-right div {
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+    font-size: 18px;
+}
+.key {
+    font-size: 20px;
+    font-weight: 600;
+}
+.badge-title a {
+    float: right;
+    margin-right: 3vmin;
+    color: white;
+}
+.badge-title a:hover {
+    color: black;
+    cursor: pointer;
+}
+.full-name {
+    display: none;
+    color: white;
+    font-size: 40px;
+}
+.about-badge {
+    text-align: center;
+}
+.expand {
+    display: none;
+}
+

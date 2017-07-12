@@ -7,7 +7,7 @@ import NameBadge from "./name-badge.js";
 class NameBadgeList extends React.Component {
     genBadges() {
         return this.props.badges.map((item, index) => {
-            return <NameBadge item={item} index={index}/>
+            return <NameBadge handleReappear = {this.props.handleReappear} handleDisappear={this.props.handleDisappear} color={this.props.color} key={item + index} item={item} index={index}/>
         });
 
     }
@@ -15,7 +15,7 @@ class NameBadgeList extends React.Component {
     render() {
 
         return (
-            <div className="row">
+            <div className="col-md-12">
                 {this.genBadges()}
             </div>
 

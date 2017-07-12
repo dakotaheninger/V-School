@@ -10,7 +10,7 @@ import Header from "./components/header.js";
 class App extends React.Component {
     render() {
         return (
-            <div className="container main">
+            <div className="container-fluid main">
                 <Header welcome="Welcome to the Name Badge Generator!"
                         describe="Fill out the information and click submit to generate your name badge!"/>
                 <NameBadgeContainer/>
