@@ -1,9 +1,10 @@
 /**
  * Created by dakotaheninger on 7/12/17.
  */
-export function input() {
+export function save(meme) {
     return {
-        type: "INP"
+        type: "SAVE",
+        meme
     }
 
 }

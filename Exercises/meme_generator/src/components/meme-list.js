@@ -5,9 +5,16 @@ import React from "react";
 import Meme from "./meme";
 
 class MemeList extends React.Component{
+	genMemes(){
+		return this.props.memes.map((item, index) => {
+			return <Meme item={item} index={index} key={item + index}/>
+		})
+	}
     render() {
     	return (
-    	   <Meme/>
+    	   <div>
+			   {this.genMemes()}
+		   </div>
     	);
     }
 

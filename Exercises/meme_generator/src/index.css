@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.all-input{
+    padding-bottom: 5vh;
+    margin-top: 0;
+    text-align: center;
+    background-color: #FF5A5F;
+}
+.all-input div{
+    background-color: #FF5A5F;
+}
+/*ß*/
+.whole {
+    background-color: #3C3C3C;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.whole div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #3C3C3C;
+
+}
+
+.whole p {
+    text-align: center;
+}
+
+.current-top {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 1vmax;
+    letter-spacing: 2px;
+    text-shadow: -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
+}
+.current-bottom {
+    font-family: 'Anton', sans-serif;
+    margin-top: 20vmax;
+    font-size: 30px;
+    color: white;
+    text-shadow: -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
+}
+
+.input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 20%;
+}
+.head  {
+    background-color: #087E8B;
+}
+.head h1, h2{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.head div{
+    text-align: center;
+    background-color: #087E8B;
+    color: #F5F5F5;
+    margin-bottom: 0;
+    padding-bottom: 5vh;
+}
+
+.submit {
+    font-size: 30px;
+    color: #F5F5F5;
+    border: 3px solid #087E8B;
+    padding: .2vmin 5vmin;
+
+}
+
+.submit:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #087E8B;
+    background-color: #F5F5F5;
+}
+
