@@ -1,0 +1,99 @@
+.container-fluid {
+    padding: 0 !important;
+}
+
+body {
+    background-color: #83858C;
+    overflow-x: hidden;
+}
+
+.shadow {
+    text-align: center;
+    background-image: url("images/ugly faces-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    z-index: -1;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-bottom: 10vh;
+}
+
+.all-input {
+    background-color: #E5625E;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.input {
+    text-align: center;
+
+}
+
+input {
+    width: 50%;
+    border: 3px solid #648381;
+}
+
+.submit {
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.submit-button {
+    font-size: 30px;
+    color: white;
+    border: 3px solid #648381;
+    padding: 0 5vmin;
+}
+
+.submit-button:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    background-color: #648381;
+    border: 3px solid white;
+}
+
+.pic {
+    height: 30vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.one-pic {
+    text-align: center;
+}
+.one-pic a{
+   font-size: 30px;
+    margin: 1vmin;
+}
+
+.edit-item {
+    display: none;
+}
+
+.edit-item input {
+    width: 50%;
+    margin-top: 7vmin;
+
+}
+
+.delete {
+    float: right;
+    color: white;
+    margin: 2px;
+}
+
+.delete:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
