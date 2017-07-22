@@ -1,0 +1,19 @@
+.head {
+    text-align: center;
+}
+.all-inputs {
+    text-align: center;
+}
+.delete {
+    float: left;
+}
+.edit {
+    float: right;
+}
+.update {
+    display: none;
+    text-align: center;
+}
+.submit {
+    text-align: center;
+}

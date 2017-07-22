@@ -2,4 +2,20 @@
     text-align: center;
     padding-top: 40vh;
     padding-bottom: 40vh;
+    margin-top: 10vh;
+}
+.button {
+    border: 3px solid black;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    padding: 1vmin 5vmin;
+}
+.button:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.colorName {
+    margin-bottom: 10vmin;
+    font-size: 25px;
 }
