@@ -1,0 +1,35 @@
+.header {
+    text-align: center;
+}
+.all-form {
+    text-align: center;
+    margin-top: 5vmin;
+}
+.all-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+}
+.button {
+    color: black;
+    padding: .5vmin 8vmin;
+    font-size: 25px;
+    border: 3px solid black;
+    margin-top: 3vmin;
+}
+.button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.people-list {
+    text-align: center;
+}
+.icons {
+    font-size: 25px;
+}
+.whole-person {
+    margin-top: 3vmin;
+}
